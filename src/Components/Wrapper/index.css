@@ -1,0 +1,20 @@
+.Wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    min-width: 475px;
+    min-height: 720px;
+    width: auto;
+    height: auto;
+    background-color: white;
+
+    border: 2px solid black;
+    border-radius: 15px;
+    
+    box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.5);
+
+    h1 {
+        margin: 15px;
+    }
+}

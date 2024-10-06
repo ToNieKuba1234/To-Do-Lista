@@ -1,0 +1,90 @@
+.Tasks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 15px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.Tasks h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.task {
+    margin: 10px 0;
+    width: 100%;
+    transition: transform 0.2s ease-in-out;
+}
+
+.task > li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+
+
+.task > li:hover {
+    background: lightgreen;
+    cursor: pointer;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.taskName {
+    font-size: 18px;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    word-wrap: break-word;
+}
+
+.deleteButton {
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: #ff4d4d;
+    transition: color 0.2s ease;
+    padding: 5px;
+    border-radius: 50%;
+}
+
+.deleteButton:hover {
+    color: #ff1a1a;
+    background-color: rgba(255, 77, 77, 0.1);
+
+    .task > li {
+        background: white;
+    }
+}
+
+.deleteButton:active {
+    background-color: #e47070;
+}
+
+.Tasks div {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border: none;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
